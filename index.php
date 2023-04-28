@@ -11,6 +11,16 @@
 
 <body>
 
+    <?php './includes/header.php'?>
+
+
+    <!-- main content -->
+
+    <?php './includes/links.php'?>
+
+
+    <?php './includes/footer.php'?>
+
 </body>
 
 </html>
