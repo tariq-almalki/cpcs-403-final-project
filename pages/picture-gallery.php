@@ -36,7 +36,7 @@ function includeFileWithVariables($fileName, $variables)
                             <img src="../images/pic-1.jpg" class="current-picture" width="750" height="500">
                         </div>
                         <div class="thumbnails">
-                            <img src="../images/pic-1.jpg" data-index="0" class="thumbnail">
+                            <img src="../images/pic-1.jpg" data-index="0" class="thumbnail highlighted">
                             <img src="../images/pic-2.jpg" data-index="1" class="thumbnail">
                             <img src="../images/pic-3.jpg" data-index="2" class="thumbnail">
                             <img src="../images/pic-4.jpg" data-index="3" class="thumbnail">
@@ -46,6 +46,10 @@ function includeFileWithVariables($fileName, $variables)
                             <img src="../images/pic-8.jpg" data-index="7" class="thumbnail">
                             <img src="../images/pic-9.jpg" data-index="8" class="thumbnail">
                             <img src="../images/pic-10.jpg" data-index="9" class="thumbnail">
+                        </div>
+                        <div>
+                            <img class="back-arrow" data-res="dec" src="../images/back.jpg" width="48" height="48" alt="">
+                            <img class="forward-arrow" data-res="inc" src="../images/forward.jpg" width="48" height="48" alt="">
                         </div>
                     </div>
                 </div>

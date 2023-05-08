@@ -12,22 +12,22 @@
         <a href="../pages/video.php">
             <div class="link-index">Video</div>
         </a>
-        <a href="">
+        <a href="../pages/feedback.php">
             <div class="link-index">Feedback</div>
         </a>
-        <a href="">
+        <a href="../pages/resume.php">
             <div class="link-index">Resume</div>
         </a>
-        <a href="">
+        <a href="../pages/contact-us.php">
             <div class="link-index">Contact us</div>
         </a>
-        <a href="">
+        <a href="../pages/blog.php">
             <div class="link-index">Blog</div>
         </a>
-        <a href="">
+        <a href="../pages/database.php">
             <div class="link-index">Database</div>
         </a>
-        <a href="">
+        <a href="../pages/page-10.php">
             <div class="link-index">page 10</div>
         </a>
     </div>

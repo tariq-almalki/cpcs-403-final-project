@@ -19,6 +19,16 @@
     src: url('../fonts/Renegade Pursuit.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'Rusty Forest';
+    src: url('../fonts/Rusty Forest.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ColaKind';
+    src: url('../fonts/ColaKind.ttf') format('truetype');
+}
+
 /* font */
 
 /* scroll-bar */
@@ -299,11 +309,15 @@ td {
     height: 100px;
     margin: 10px;
     border: 2px solid white;
-    cursor: pointer;
 }
 
 .thumbnail.highlighted {
     border: 4px solid rgb(255, 0, 0);
+}
+
+.back-arrow,
+.forward-arrow {
+    cursor: pointer;
 }
 
 .big-picture {
@@ -339,6 +353,168 @@ td {
 }
 
 /* video.php classes */
+
+/* feedback.php classes */
+
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.feedback-text {
+    font-size: 3em;
+    padding: 0.5em;
+    font-family: 'purple queen';
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 16px;
+    width: 300px;
+    max-width: 350px;
+}
+
+.form-fieldset-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.form-fieldset-1 > legend {
+    font-family: 'Renegade Pursuit';
+}
+
+.form-fieldset-1 > label {
+    font-family: 'Rusty Forest';
+}
+
+.form-fieldset-2 > legend {
+    font-family: 'Renegade Pursuit';
+}
+
+.form-fieldset-2 > label {
+    font-family: 'Rusty Forest';
+}
+
+#feedback-label {
+    font-family: 'Rusty Forest';
+}
+
+.feedback-form > button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 6px;
+    font-family: 'ColaKind';
+    transition: all 0.2s ease;
+}
+
+.feedback-form > button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form-fieldset-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.form-fieldset-1 > label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-fieldset-2 > label:nth-child(-n + 3) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-div-error {
+    position: fixed;
+    list-style: none;
+    bottom: 0;
+    left: 0;
+    height: fit-content;
+    width: fit-content;
+    color: red;
+    background-color: antiquewhite;
+    border: 3px solid black;
+    -moz-animation: cssAnimation 3s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 3s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 3s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 3s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.form-div-success {
+    position: fixed;
+    list-style: none;
+    bottom: 0;
+    left: 0;
+    height: fit-content;
+    width: fit-content;
+    color: rgb(0, 218, 0);
+    background-color: antiquewhite;
+    border: 3px solid black;
+    -moz-animation: cssAnimation 3s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 3s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 3s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 3s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        overflow: hidden;
+    }
+}
+
+/* feedback.php classes */
+
+/* resume.php classes */
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.resume-text {
+    font-size: 3em;
+    padding: 0.5em;
+    font-family: 'purple queen';
+}
+
+/* resume.php classes */
+
+/* contact-us.php classes */
+
+/* contact-us.php classes */
 
 /* ------------------------------------------------------------------------ */
 /* header.php classes */
