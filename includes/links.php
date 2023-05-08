@@ -9,7 +9,7 @@
         <a href="../pages/picture-gallery.php">
             <div class="link-index">Picture Gallery</div>
         </a>
-        <a href="">
+        <a href="../pages/video.php">
             <div class="link-index">Video</div>
         </a>
         <a href="">

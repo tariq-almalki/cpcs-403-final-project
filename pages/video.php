@@ -28,6 +28,12 @@ function includeFileWithVariables($fileName, $variables)
 
             <div class="index--1_content">
 
+                <div class="video-container">
+                    <div class="video-text">Video</div>
+                    <object data="https://www.youtube.com/embed/mFjJ6jbGAlA" width="90%" height="80%">
+                    </object>
+                </div>
+
                 <div class="index--3_div">
                     <?php includeFileWithVariables('../includes/links.php', array()) ?>
                     <?php includeFileWithVariables('../includes/footer.php', array()) ?>

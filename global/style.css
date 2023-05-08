@@ -322,6 +322,24 @@ td {
 
 /* picture-gallery.php classes */
 
+/* video.php classes */
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.video-text {
+    font-size: 3em;
+    padding: 0.5em;
+    font-family: 'purple queen';
+}
+
+/* video.php classes */
+
 /* ------------------------------------------------------------------------ */
 /* header.php classes */
 
