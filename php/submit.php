@@ -35,7 +35,11 @@ $conn->select_db($dbname);
 // Get form data
 $firstName = $_POST['first-name'];
 $lastName = $_POST['last-name'];
+$username = $_POST['username'];
 $email = $_POST['email'];
+$profession = $_POST['profession'];
+$address = $_POST['address'];
+$postalCode = $_POST['postal-code'];
 $gender = $_POST['gender'];
 $hobbies = $_POST['hobbies'];
 $city = $_POST['city'];
@@ -49,8 +53,8 @@ if ($result->num_rows > 0) {
     $message = "Email already exists";
 } else {
     // Insert data into database
-    $sql = "INSERT INTO feedback (first_name, last_name, email, gender, hobbies, city, feedback)
-	VALUES ('$firstName', '$lastName', '$email', '$gender', '$hobbies', '$city', '$feedback')";
+    $sql = "INSERT INTO feedback (first_name, last_name, username, email, profession, address, postal_code, gender, hobbies, city, feedback)
+	VALUES ('$firstName', '$lastName', '$username', '$email', '$profession', '$address', '$postalCode', '$gender', '$hobbies', '$city', '$feedback')";
 
     try {
 
