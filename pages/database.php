@@ -87,19 +87,3 @@ $conn->close();
 </body>
 
 </html>
-
-
-
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Orders Report</title>
-</head>
-
-<body>
-
-</body>
-
-</html>
