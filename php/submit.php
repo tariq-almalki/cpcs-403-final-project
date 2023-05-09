@@ -33,7 +33,7 @@ $conn->select_db($dbname);
 // )";
 
 // Get form data
-$id = hexdec(uniqid());
+$id = hexdec(substr(uniqid(), 0, 7));
 $firstName = $_POST['first-name'];
 $lastName = $_POST['last-name'];
 $username = $_POST['username'];
@@ -59,6 +59,8 @@ if ($result->num_rows > 0) {
     $sql = "INSERT INTO feedback (id, first_name, last_name, username, email, profession, address, postal_code, gender, hobbies, city, feedback)
 	VALUES ('$id', '$firstName', '$lastName', '$username', '$email', '$profession', '$address', '$postalCode', '$gender', '$hobbies', '$city', '$feedback')";
 
+    // $message = $conn->query($sql);
+
     try {
 
         if ($conn->query($sql) === TRUE) {
@@ -82,7 +84,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="refresh" content="2; http://localhost:3000/pages/feedback.php"> -->
+    <meta http-equiv="refresh" content="2; http://localhost:3000/pages/feedback.php">
     <title>Document</title>
     <style>
         @font-face {
@@ -102,8 +104,8 @@ $conn->close();
             align-items: center;
             height: 100vh;
             width: 100vw;
-            /* font-family: 'Rusty Forest'; */
-            font-size: 1em;
+            font-family: 'Rusty Forest';
+            font-size: 4em;
             color: black;
         }
     </style>

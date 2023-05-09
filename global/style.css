@@ -29,6 +29,11 @@
     src: url('../fonts/ColaKind.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'gance';
+    src: url('../fonts/Gance.ttf') format('truetype');
+}
+
 /* font */
 
 /* scroll-bar */
@@ -574,6 +579,66 @@ td {
 }
 
 /* blog.php classes */
+
+/* database.php classes */
+.database-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.database-text {
+    font-size: 3em;
+    padding: 0.5em;
+    font-family: 'purple queen';
+}
+/* database.php classes */
+
+/* page-10.php classes */
+.page-10-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.page-10-text {
+    font-size: 3em;
+    padding: 0.5em;
+    font-family: 'purple queen';
+}
+
+.wasnt-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.wasnt-f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wasnt-s {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wasnt-text {
+    font-size: 3em;
+    padding: 0.5em;
+    font-family: 'gance';
+}
+/* page-10.php classes */
 
 /* ------------------------------------------------------------------------ */
 /* header.php classes */
