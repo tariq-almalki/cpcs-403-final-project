@@ -33,6 +33,7 @@ $conn->select_db($dbname);
 // )";
 
 // Get form data
+$id = hexdec(uniqid());
 $firstName = $_POST['first-name'];
 $lastName = $_POST['last-name'];
 $username = $_POST['username'];
@@ -47,21 +48,23 @@ $feedback = $_POST['feedback'];
 
 // Validate email
 $sql = "SELECT * FROM feedback WHERE email='$email'";
+
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     $message = "Email already exists";
 } else {
+
     // Insert data into database
-    $sql = "INSERT INTO feedback (first_name, last_name, username, email, profession, address, postal_code, gender, hobbies, city, feedback)
-	VALUES ('$firstName', '$lastName', '$username', '$email', '$profession', '$address', '$postalCode', '$gender', '$hobbies', '$city', '$feedback')";
+    $sql = "INSERT INTO feedback (id, first_name, last_name, username, email, profession, address, postal_code, gender, hobbies, city, feedback)
+	VALUES ('$id', '$firstName', '$lastName', '$username', '$email', '$profession', '$address', '$postalCode', '$gender', '$hobbies', '$city', '$feedback')";
 
     try {
 
         if ($conn->query($sql) === TRUE) {
             $message =  "Feedback submitted successfully";
         } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+            $message = "Error: " . $sql . "<br>" . $conn->error;
         }
     } catch (Exception $e) {
         echo "Exception: " . $e->getMessage();
@@ -79,7 +82,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="2; http://localhost:3000/pages/feedback.php">
+    <!-- <meta http-equiv="refresh" content="2; http://localhost:3000/pages/feedback.php"> -->
     <title>Document</title>
     <style>
         @font-face {
@@ -99,8 +102,8 @@ $conn->close();
             align-items: center;
             height: 100vh;
             width: 100vw;
-            font-family: 'Rusty Forest';
-            font-size: 4em;
+            /* font-family: 'Rusty Forest'; */
+            font-size: 1em;
             color: black;
         }
     </style>
