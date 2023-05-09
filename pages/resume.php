@@ -30,6 +30,9 @@ function includeFileWithVariables($fileName, $variables)
 
                 <div class="resume-container">
                     <div class="resume-text">Resume</div>
+                    <object data="../pdfs/tariq-almalki-resume.pdf" type="application/pdf" width="100%" height="600px">
+                        <p>PDF cannot be displayed in your browser. <a href="example.pdf">Download</a> instead.</p>
+                    </object>
                 </div>
 
                 <div class="index--3_div">
