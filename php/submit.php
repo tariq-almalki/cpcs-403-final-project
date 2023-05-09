@@ -1,31 +1,17 @@
 <?php
-$servername = "localhost";
-$username = "ODBC";
-$password = "odbc";
+$servername = "containers-us-west-12.railway.app";
+$username = "root";
+$password = "MVORa51Raa4ig5ibfhNM";
+$port = '7747';
 $dbname = 'feedback';
 
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-// Create database
-// $sql = "CREATE DATABASE $dbname";
-
-
-// try {
-//     if ($conn->query($sql) === TRUE) {
-//         echo "Database created successfully";
-//     } else {
-//         echo "Error creating database: " . $conn->error;
-//     }
-// } catch (Exception $e) {
-//     echo "Exception: " . $e->getMessage();
-// }
-
 
 // Select database
 $conn->select_db($dbname);
@@ -35,25 +21,16 @@ $conn->select_db($dbname);
 // 	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 // 	first_name VARCHAR(30) NOT NULL,
 // 	last_name VARCHAR(30) NOT NULL,
+//  username VARCHAR(30) NOT NULL,
 // 	email VARCHAR(50) NOT NULL,
+//  profession VARCHAR(30) NOT NULL,
+//  address VARCHAR(30) NOT NULL,
+//  postal_code VARCHAR(30) NOT NULL,
 // 	gender VARCHAR(10) NOT NULL,
 // 	hobbies VARCHAR(50) NOT NULL,
 // 	city VARCHAR(30) NOT NULL,
 // 	feedback TEXT NOT NULL,
-// 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 // )";
-
-// try {
-//     if ($conn->query($sql) === TRUE) {
-//         echo "Table created successfully";
-//     } else {
-//         echo "Error creating table: " . $conn->error;
-//     }
-// } catch (Exception $e) {
-//     echo "Exception: " . $e->getMessage();
-// }
-
-
 
 // Get form data
 $firstName = $_POST['first-name'];
