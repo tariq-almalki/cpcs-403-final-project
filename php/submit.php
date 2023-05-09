@@ -2,8 +2,8 @@
 $servername = "containers-us-west-12.railway.app";
 $username = "root";
 $password = "MVORa51Raa4ig5ibfhNM";
-$port = '7747';
-$dbname = 'feedback';
+$port = "7747";
+$dbname = "feedback";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname, $port);
