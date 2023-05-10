@@ -84,7 +84,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="2; http://localhost:3000/pages/feedback.php">
+    <meta http-equiv="refresh" content="2; https://tariq-almalki.up.railway.app/pages/feedback.php">
     <title>Document</title>
     <style>
         @font-face {
