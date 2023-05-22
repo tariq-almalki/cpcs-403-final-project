@@ -16,22 +16,6 @@ if ($conn->connect_error) {
 // Select database
 $conn->select_db($dbname);
 
-// Create table
-// $sql = "CREATE TABLE feedback (
-// 	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-// 	first_name VARCHAR(30) NOT NULL,
-// 	last_name VARCHAR(30) NOT NULL,
-//  username VARCHAR(30) NOT NULL,
-// 	email VARCHAR(50) NOT NULL,
-//  profession VARCHAR(30) NOT NULL,
-//  address VARCHAR(30) NOT NULL,
-//  postal_code VARCHAR(30) NOT NULL,
-// 	gender VARCHAR(10) NOT NULL,
-// 	hobbies VARCHAR(50) NOT NULL,
-// 	city VARCHAR(30) NOT NULL,
-// 	feedback TEXT NOT NULL,
-// )";
-
 // Get form data
 $id = hexdec(substr(uniqid(), 0, 7));
 $firstName = $_POST['first-name'];
