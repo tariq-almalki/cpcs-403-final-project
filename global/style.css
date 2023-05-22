@@ -178,11 +178,19 @@ a:hover {
     transition: all 0.2s ease;
 }
 
+.index--1_github:hover {
+    color: blue;
+}
+
 .index--1_linkedin {
     padding: 0.5em;
     font-size: 2em;
     font-family: 'purple queen';
     transition: all 0.2s ease;
+}
+
+.index--1_linkedin:hover {
+    color: blue;
 }
 
 .index--1-2_div {
